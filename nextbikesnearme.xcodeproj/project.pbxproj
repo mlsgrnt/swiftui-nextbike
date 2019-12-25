@@ -13,6 +13,13 @@
 		0257710323B4098F007147B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0257710223B4098F007147B6 /* Assets.xcassets */; };
 		0257710623B4098F007147B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0257710523B4098F007147B6 /* Preview Assets.xcassets */; };
 		0257710923B4098F007147B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0257710723B4098F007147B6 /* LaunchScreen.storyboard */; };
+		0257711323B40CC2007147B6 /* StationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711223B40CC2007147B6 /* StationStore.swift */; };
+		0257711523B40F1A007147B6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711423B40F1A007147B6 /* NetworkManager.swift */; };
+		0257711723B41007007147B6 /* Nextbikes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711623B41007007147B6 /* Nextbikes.swift */; };
+		0257711923B413E6007147B6 /* BikeStationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711823B413E6007147B6 /* BikeStationRow.swift */; };
+		0257711B23B416F5007147B6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711A23B416F5007147B6 /* ActivityIndicator.swift */; };
+		0257711D23B41803007147B6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711C23B41803007147B6 /* LocationManager.swift */; };
+		0257711F23B41B79007147B6 /* PlaceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711E23B41B79007147B6 /* PlaceExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		0257710523B4098F007147B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0257710823B4098F007147B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0257710A23B4098F007147B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0257711223B40CC2007147B6 /* StationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStore.swift; sourceTree = "<group>"; };
+		0257711423B40F1A007147B6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0257711623B41007007147B6 /* Nextbikes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nextbikes.swift; sourceTree = "<group>"; };
+		0257711823B413E6007147B6 /* BikeStationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationRow.swift; sourceTree = "<group>"; };
+		0257711A23B416F5007147B6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		0257711C23B41803007147B6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0257711E23B41B79007147B6 /* PlaceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,11 @@
 		025770F023B4098D007147B6 = {
 			isa = PBXGroup;
 			children = (
+				0257711223B40CC2007147B6 /* StationStore.swift */,
+				0257711E23B41B79007147B6 /* PlaceExtension.swift */,
+				0257711623B41007007147B6 /* Nextbikes.swift */,
+				0257711C23B41803007147B6 /* LocationManager.swift */,
+				0257711423B40F1A007147B6 /* NetworkManager.swift */,
 				025770FB23B4098D007147B6 /* nextbikesnearme */,
 				025770FA23B4098D007147B6 /* Products */,
 			);
@@ -59,6 +78,8 @@
 				025770FC23B4098D007147B6 /* AppDelegate.swift */,
 				025770FE23B4098D007147B6 /* SceneDelegate.swift */,
 				0257710023B4098D007147B6 /* ContentView.swift */,
+				0257711A23B416F5007147B6 /* ActivityIndicator.swift */,
+				0257711823B413E6007147B6 /* BikeStationRow.swift */,
 				0257710223B4098F007147B6 /* Assets.xcassets */,
 				0257710723B4098F007147B6 /* LaunchScreen.storyboard */,
 				0257710A23B4098F007147B6 /* Info.plist */,
@@ -146,9 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0257711523B40F1A007147B6 /* NetworkManager.swift in Sources */,
 				025770FD23B4098D007147B6 /* AppDelegate.swift in Sources */,
 				025770FF23B4098D007147B6 /* SceneDelegate.swift in Sources */,
+				0257711F23B41B79007147B6 /* PlaceExtension.swift in Sources */,
+				0257711923B413E6007147B6 /* BikeStationRow.swift in Sources */,
+				0257711B23B416F5007147B6 /* ActivityIndicator.swift in Sources */,
+				0257711323B40CC2007147B6 /* StationStore.swift in Sources */,
+				0257711723B41007007147B6 /* Nextbikes.swift in Sources */,
 				0257710123B4098D007147B6 /* ContentView.swift in Sources */,
+				0257711D23B41803007147B6 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

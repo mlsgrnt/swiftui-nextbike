@@ -9,13 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var stationStore: StationStore
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            if stationStore.loading == true {
+                ActivityIndicator(isAnimating: .constant(true), style: .large)
+                .navigationBarTitle("Loading")
+            } else {
+                List(stationStore.stations) { station in
+                    BikeStationRow(station: station)
+                }
+                .navigationBarTitle("Glasgow Nextbikes")
+            }
+            
+
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let stationStore = StationStore()
+        return ContentView(stationStore: stationStore)
     }
 }
