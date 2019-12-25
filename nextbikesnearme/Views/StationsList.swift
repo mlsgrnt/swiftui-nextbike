@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StationsList: View {
     @ObservedObject var stationStore: StationStore
     
     var body: some View {
@@ -31,6 +31,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let stationStore = StationStore()
-        return ContentView(stationStore: stationStore)
+        return StationsList(stationStore: stationStore)
     }
 }

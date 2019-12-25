@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		025770FD23B4098D007147B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025770FC23B4098D007147B6 /* AppDelegate.swift */; };
 		025770FF23B4098D007147B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025770FE23B4098D007147B6 /* SceneDelegate.swift */; };
-		0257710123B4098D007147B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257710023B4098D007147B6 /* ContentView.swift */; };
+		0257710123B4098D007147B6 /* StationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257710023B4098D007147B6 /* StationsList.swift */; };
 		0257710323B4098F007147B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0257710223B4098F007147B6 /* Assets.xcassets */; };
 		0257710623B4098F007147B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0257710523B4098F007147B6 /* Preview Assets.xcassets */; };
 		0257710923B4098F007147B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0257710723B4098F007147B6 /* LaunchScreen.storyboard */; };
@@ -26,7 +26,7 @@
 		025770F923B4098D007147B6 /* nextbikesnearme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nextbikesnearme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025770FC23B4098D007147B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		025770FE23B4098D007147B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0257710023B4098D007147B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0257710023B4098D007147B6 /* StationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsList.swift; sourceTree = "<group>"; };
 		0257710223B4098F007147B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0257710523B4098F007147B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0257710823B4098F007147B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,11 +54,6 @@
 		025770F023B4098D007147B6 = {
 			isa = PBXGroup;
 			children = (
-				0257711223B40CC2007147B6 /* StationStore.swift */,
-				0257711E23B41B79007147B6 /* PlaceExtension.swift */,
-				0257711623B41007007147B6 /* Nextbikes.swift */,
-				0257711C23B41803007147B6 /* LocationManager.swift */,
-				0257711423B40F1A007147B6 /* NetworkManager.swift */,
 				025770FB23B4098D007147B6 /* nextbikesnearme */,
 				025770FA23B4098D007147B6 /* Products */,
 			);
@@ -75,11 +70,10 @@
 		025770FB23B4098D007147B6 /* nextbikesnearme */ = {
 			isa = PBXGroup;
 			children = (
+				02C12F5023B424DF00068BB4 /* Models */,
 				025770FC23B4098D007147B6 /* AppDelegate.swift */,
 				025770FE23B4098D007147B6 /* SceneDelegate.swift */,
-				0257710023B4098D007147B6 /* ContentView.swift */,
-				0257711A23B416F5007147B6 /* ActivityIndicator.swift */,
-				0257711823B413E6007147B6 /* BikeStationRow.swift */,
+				02C12F5123B4268800068BB4 /* Views */,
 				0257710223B4098F007147B6 /* Assets.xcassets */,
 				0257710723B4098F007147B6 /* LaunchScreen.storyboard */,
 				0257710A23B4098F007147B6 /* Info.plist */,
@@ -94,6 +88,28 @@
 				0257710523B4098F007147B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02C12F5023B424DF00068BB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0257711223B40CC2007147B6 /* StationStore.swift */,
+				0257711E23B41B79007147B6 /* PlaceExtension.swift */,
+				0257711623B41007007147B6 /* Nextbikes.swift */,
+				0257711C23B41803007147B6 /* LocationManager.swift */,
+				0257711423B40F1A007147B6 /* NetworkManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02C12F5123B4268800068BB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0257710023B4098D007147B6 /* StationsList.swift */,
+				0257711A23B416F5007147B6 /* ActivityIndicator.swift */,
+				0257711823B413E6007147B6 /* BikeStationRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +191,7 @@
 				0257711B23B416F5007147B6 /* ActivityIndicator.swift in Sources */,
 				0257711323B40CC2007147B6 /* StationStore.swift in Sources */,
 				0257711723B41007007147B6 /* Nextbikes.swift in Sources */,
-				0257710123B4098D007147B6 /* ContentView.swift in Sources */,
+				0257710123B4098D007147B6 /* StationsList.swift in Sources */,
 				0257711D23B41803007147B6 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

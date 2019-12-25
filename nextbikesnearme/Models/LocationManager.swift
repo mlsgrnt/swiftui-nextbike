@@ -23,7 +23,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
         self.manager.requestWhenInUseAuthorization()
         self.manager.desiredAccuracy = 500.0
         self.manager.activityType = .other
-        self.manager.startUpdatingLocation()
+        self.manager.startMonitoringSignificantLocationChanges()
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
