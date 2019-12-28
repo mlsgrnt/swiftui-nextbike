@@ -10,17 +10,17 @@ import SwiftUI
 
 struct StationsList: View {
     @ObservedObject var stationStore: StationStore
-    
-    var body: some View {
+        
+    var body: some View {        
         NavigationView {
             if stationStore.loading == true {
                 ActivityIndicator(isAnimating: .constant(true), style: .large)
-                .navigationBarTitle("Loading")
+                .navigationBarTitle("\(stationStore.cityName) Loading")
             } else {
                 List(stationStore.stations) { station in
                     BikeStationRow(station: station)
                 }
-                .navigationBarTitle("Glasgow Nextbikes")
+                .navigationBarTitle("\(stationStore.cityName) Nextbikes")
             }
             
 

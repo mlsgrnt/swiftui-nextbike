@@ -10,8 +10,12 @@ import UIKit
 
 class NetworkManager: NSObject {
     struct APIURL {
-        static func stationsRequest() -> String {
-            return "https://brave-silk.glitch.me/nextbike".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        static func stationsRequest(city: Int) -> String {
+            return "https://fierce-chestnut.glitch.me/live/\(city)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        }
+        
+        static func citiesRequest() -> String {
+            return "https://fierce-chestnut.glitch.me/countries"
         }
     }        
 }

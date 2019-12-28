@@ -29,6 +29,6 @@ struct BikeStationRow: View {
 
 struct BikeStationRow_Previews: PreviewProvider {
     static var previews: some View {
-        BikeStationRow(station: Place(id: 1, lat: 1, lng: 1, bike: true, name: "test", address: nil, spot: false, number: 4, bikes: 6, bookedBikes: 2, bikeRacks: 2, freeRacks: 4, specialRacks: 5, freeSpecialRacks: 3, maintenance: false, terminalType: TerminalType.empty, bikeList: [], bikeNumbers: [], bikeTypes: [:], placeType: "", rackLocks: false))
+        BikeStationRow(station: Place(id: 1, lat: 1, lng: 1, bike: true, name: "test", address: nil, spot: false, number: 4, bikes: 6, bookedBikes: 2, bikeRacks: 2, freeRacks: 4, specialRacks: 5, freeSpecialRacks: 3, maintenance: false, terminalType: "empty", bikeList: [], bikeNumbers: [], bikeTypes: [:], placeType: "", rackLocks: false))
     }
 }

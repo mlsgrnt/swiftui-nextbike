@@ -20,6 +20,7 @@
 		0257711B23B416F5007147B6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711A23B416F5007147B6 /* ActivityIndicator.swift */; };
 		0257711D23B41803007147B6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711C23B41803007147B6 /* LocationManager.swift */; };
 		0257711F23B41B79007147B6 /* PlaceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711E23B41B79007147B6 /* PlaceExtension.swift */; };
+		02E6FCE223B7C25A007BF9BC /* CityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6FCE123B7C25A007BF9BC /* CityStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0257711A23B416F5007147B6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		0257711C23B41803007147B6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0257711E23B41B79007147B6 /* PlaceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceExtension.swift; sourceTree = "<group>"; };
+		02E6FCE123B7C25A007BF9BC /* CityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				0257711223B40CC2007147B6 /* StationStore.swift */,
+				02E6FCE123B7C25A007BF9BC /* CityStore.swift */,
 				0257711E23B41B79007147B6 /* PlaceExtension.swift */,
 				0257711623B41007007147B6 /* Nextbikes.swift */,
 				0257711C23B41803007147B6 /* LocationManager.swift */,
@@ -186,6 +189,7 @@
 				0257711523B40F1A007147B6 /* NetworkManager.swift in Sources */,
 				025770FD23B4098D007147B6 /* AppDelegate.swift in Sources */,
 				025770FF23B4098D007147B6 /* SceneDelegate.swift in Sources */,
+				02E6FCE223B7C25A007BF9BC /* CityStore.swift in Sources */,
 				0257711F23B41B79007147B6 /* PlaceExtension.swift in Sources */,
 				0257711923B413E6007147B6 /* BikeStationRow.swift in Sources */,
 				0257711B23B416F5007147B6 /* ActivityIndicator.swift in Sources */,

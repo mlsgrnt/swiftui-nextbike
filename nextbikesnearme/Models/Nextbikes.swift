@@ -15,7 +15,8 @@ struct Country: Codable {
     let lat, lng: Double
     let zoom: Int
     let name, hotline, domain, language: String
-    let email, timezone, currency, countryCallingCode: String
+    let email: String?
+    let timezone, currency, countryCallingCode: String
     let systemOperatorAddress, country, countryName: String
     let terms, policy, website: String
     let showBikeTypes, showBikeTypeGroups, showFreeRacks: Bool
@@ -58,7 +59,7 @@ struct City: Codable {
     let returnToOfficialOnly: Bool
     let bikeTypes: [String: Int]
     let website: String
-    let places: [Place]
+    let places: [Place]?
 
     enum CodingKeys: String, CodingKey {
         case uid, lat, lng, zoom
@@ -104,7 +105,7 @@ struct Place: Codable, Identifiable {
     let number, bikes, bookedBikes, bikeRacks: Int
     let freeRacks, specialRacks, freeSpecialRacks: Int
     let maintenance: Bool
-    let terminalType: TerminalType
+    let terminalType: String
     let bikeList: [BikeList]
     let bikeNumbers: [String]
     let bikeTypes: [String: Int]
@@ -167,12 +168,6 @@ enum LockType: String, Codable {
 
 enum State: String, Codable {
     case ok = "ok"
-}
-
-enum TerminalType: String, Codable {
-    case empty = ""
-    case smartSign = "smart_sign"
-    case stele = "stele"
 }
 
 // MARK: - Encode/decode helpers
