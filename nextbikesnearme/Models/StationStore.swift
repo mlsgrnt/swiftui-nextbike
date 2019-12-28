@@ -48,9 +48,7 @@ class StationStore: ObservableObject {
                 guard let city = $0 else {
                     return
                 }
-                
-                print("new best city!")
-                
+                                
                 // Call the method which grabs the bikes from the server
                 self.getStations(city: city.uid)
                 DispatchQueue.main.async {
