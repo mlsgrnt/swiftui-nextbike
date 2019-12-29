@@ -106,7 +106,7 @@ struct Place: Codable, Identifiable {
     let freeRacks, specialRacks, freeSpecialRacks: Int
     let maintenance: Bool
     let terminalType: String
-    let bikeList: [BikeList]
+    let bikeList: [Bike]
     let bikeNumbers: [String]
     let bikeTypes: [String: Int]
     let placeType: String
@@ -130,11 +130,11 @@ struct Place: Codable, Identifiable {
     }
 }
 
-// MARK: - BikeList
-struct BikeList: Codable {
-    let number: String
+// MARK: - Bike
+struct Bike: Codable, Identifiable {
+    let id: String
     let bikeType: Int
-    let lockTypes: [LockType]
+    let lockTypes: [LockType]?
     let active: Bool
     let state: State
     let electricLock: Bool
@@ -143,7 +143,7 @@ struct BikeList: Codable {
     let batteryPack: BatteryPack?
 
     enum CodingKeys: String, CodingKey {
-        case number
+        case id = "number"
         case bikeType = "bike_type"
         case lockTypes = "lock_types"
         case active, state

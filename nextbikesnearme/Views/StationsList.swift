@@ -18,9 +18,11 @@ struct StationsList: View {
                 .navigationBarTitle("\(stationStore.cityName) Loading")
             } else {
                 List(stationStore.stations) { station in
-                    BikeStationRow(station: station)
-                }
-                .navigationBarTitle("\(stationStore.cityName) Nextbikes")
+                    NavigationLink(destination: BikeStationView(station: station)) {
+                        BikeStationRow(station: station)
+                    }.navigationBarTitle("\(self.stationStore.cityName)")
+                }.listStyle(GroupedListStyle()).environment(\.horizontalSizeClass, .regular)
+                
             }
             
 
