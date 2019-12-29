@@ -25,7 +25,11 @@ class CityStore: ObservableObject {
     }
     
     // Method to update city based on geolocation
-    // TODO
+    
+    // This method relies on the country list being succesfully downloaded.
+    // This is not an ideal assumption to make
+    // Temporarily solved by increasing the caching a lot on the server but a more ideal solution would
+    // wait until the country list is fully grabbed! Some kind of sempahore
     func updateCityWithLocation(_ location: CLLocation?) {
         guard let location = location else {
             return
