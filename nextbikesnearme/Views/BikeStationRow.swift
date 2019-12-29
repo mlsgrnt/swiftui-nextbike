@@ -10,9 +10,9 @@ import SwiftUI
 
 struct BikeStationRow: View {
     var station: Place
-    
+
     var body: some View {
-        HStack() {
+        HStack {
             Text(station.name)
             Spacer()
             Text(String(station.bikes))
