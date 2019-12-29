@@ -1,4 +1,4 @@
-# SwifUI Nextbikes
+# SwiftUI Nextbikes
 
 A very messy exploration of SwiftUI (I finally have time)
 
