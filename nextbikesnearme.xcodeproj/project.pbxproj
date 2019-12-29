@@ -22,6 +22,7 @@
 		0257711F23B41B79007147B6 /* PlaceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257711E23B41B79007147B6 /* PlaceExtension.swift */; };
 		026C28C923B8C88500307519 /* BikeStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C28C823B8C88500307519 /* BikeStationView.swift */; };
 		026C28CB23B8D15400307519 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C28CA23B8D15400307519 /* Helpers.swift */; };
+		026C28CD23B9207A00307519 /* BikeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C28CC23B9207A00307519 /* BikeRow.swift */; };
 		02E6FCE223B7C25A007BF9BC /* CityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6FCE123B7C25A007BF9BC /* CityStore.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		0257711E23B41B79007147B6 /* PlaceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceExtension.swift; sourceTree = "<group>"; };
 		026C28C823B8C88500307519 /* BikeStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationView.swift; sourceTree = "<group>"; };
 		026C28CA23B8D15400307519 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		026C28CC23B9207A00307519 /* BikeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRow.swift; sourceTree = "<group>"; };
 		02E6FCE123B7C25A007BF9BC /* CityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				0257711A23B416F5007147B6 /* ActivityIndicator.swift */,
 				0257711823B413E6007147B6 /* BikeStationRow.swift */,
 				026C28C823B8C88500307519 /* BikeStationView.swift */,
+				026C28CC23B9207A00307519 /* BikeRow.swift */,
 				026C28CA23B8D15400307519 /* Helpers.swift */,
 			);
 			path = Views;
@@ -203,6 +206,7 @@
 				0257711323B40CC2007147B6 /* StationStore.swift in Sources */,
 				0257711723B41007007147B6 /* Nextbikes.swift in Sources */,
 				026C28CB23B8D15400307519 /* Helpers.swift in Sources */,
+				026C28CD23B9207A00307519 /* BikeRow.swift in Sources */,
 				0257710123B4098D007147B6 /* StationsList.swift in Sources */,
 				0257711D23B41803007147B6 /* LocationManager.swift in Sources */,
 			);

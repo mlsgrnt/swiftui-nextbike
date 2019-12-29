@@ -16,7 +16,7 @@ struct BikeStationView: View {
             List {
                 Section(header: Text("\(station.bikes) \(pluralize(string: "bike", count: station.bikes))"), footer: Text("\(station.bookedBikes) \(pluralize(string: "bike", count: station.bookedBikes)) reserved")) {
                     ForEach(station.bikeList) { bike in
-                        Text("Bike \(bike.id)")
+                        BikeRow(bike: bike)
                     }
                 }
             }.listStyle(GroupedListStyle()).environment(\.horizontalSizeClass, .regular)
