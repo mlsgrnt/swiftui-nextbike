@@ -100,7 +100,7 @@ struct Place: Codable, Identifiable {
     let lat, lng: Double
     let bike: Bool
     let name: String
-    let address: JSONNull?
+    let address: String?
     let spot: Bool
     let number, bikes, bookedBikes, bikeRacks: Int
     let freeRacks, specialRacks, freeSpecialRacks: Int
@@ -168,31 +168,4 @@ enum LockType: String, Codable {
 
 enum State: String, Codable {
     case ok = "ok"
-}
-
-// MARK: - Encode/decode helpers
-
-class JSONNull: Codable, Hashable {
-
-    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
-        return true
-    }
-
-    public var hashValue: Int {
-        return 0
-    }
-
-    public init() {}
-
-    public required init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if !container.decodeNil() {
-            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encodeNil()
-    }
 }
