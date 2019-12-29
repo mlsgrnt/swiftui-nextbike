@@ -12,7 +12,8 @@ import CoreLocation
 
 
 class CityStore: ObservableObject {
-
+    
+    let semaphore = DispatchSemaphore(value: 0)
     @Published var city: City?
     var nextbikes: Nextbikes
 
@@ -25,14 +26,14 @@ class CityStore: ObservableObject {
     }
     
     // Method to update city based on geolocation
-    
-    // This method relies on the country list being succesfully downloaded.
-    // This is not an ideal assumption to make
-    // Temporarily solved by increasing the caching a lot on the server but a more ideal solution would
-    // wait until the country list is fully grabbed! Some kind of sempahore
     func updateCityWithLocation(_ location: CLLocation?) {
         guard let location = location else {
             return
+        }
+        
+        // Don't do anything until the country list is present!
+        if nextbikes.countries.count == 0 {
+            self.semaphore.wait()
         }
         
         var minDistance = Double.greatestFiniteMagnitude
@@ -72,6 +73,7 @@ class CityStore: ObservableObject {
                 
                 DispatchQueue.main.async {
                     self.nextbikes = countries
+                    self.semaphore.signal()
                 }
             } catch {
                 print("Failure downloading country list")

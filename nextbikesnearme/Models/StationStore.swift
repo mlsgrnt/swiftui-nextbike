@@ -37,7 +37,11 @@ class StationStore: ObservableObject {
         locationManager.$lastKnownLocation
             .sink() {
                     // Call the cityStore method which updates the correct city
-                    self.cityStore.updateCityWithLocation($0)
+                    let city = $0
+                    DispatchQueue.global(qos: .background).async {
+                        self.cityStore.updateCityWithLocation(city)
+                    }
+                    
                     self.sortStationsByLocation(location: $0)
             }
             .store(in: &cancellables)
