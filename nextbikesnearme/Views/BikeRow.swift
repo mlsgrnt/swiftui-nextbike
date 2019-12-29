@@ -22,6 +22,8 @@ struct BikeRow: View {
                 Text("\(String(bike.batteryPack!.percentage))")
             }
             
+        }.contextMenu{
+            BikeModalView(bike: bike)
         }
     }
 }
